@@ -1,2 +1,2 @@
 # CAS222
-This is a test!
+This is the AITH project for CAS222.
