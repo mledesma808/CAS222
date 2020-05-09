@@ -9,25 +9,21 @@
         <a href="<?php echo BASE_URL; ?>contact" class="inactive">Contact</a>
     </div>
 <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-    <a href="javascript:void(0);" class="icon" onclick="myFunction(x)">
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
     </a>
 </nav>
 <script>
 
-function myFunction(x){
+function myFunction(){
 
   var inactiveLinks = document.getElementById("burger");
 
-  if (x.matches) {
-    if (inactiveLinks.style.display === "block") {
-      inactiveLinks.style.display = "none";
-    } else {
-      inactiveLinks.style.display = "block";
-    }
+  if (inactiveLinks.style.display === "block") {
+    inactiveLinks.style.display = "none";
+  } else {
+    inactiveLinks.style.display = "block";
   }
 }
-
-var x = window.matchMedia("(max-width: 900px)")
 
 </script>
