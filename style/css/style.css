@@ -155,16 +155,14 @@ footer p {
 /* #region Tablet Style */
 @media (min-width: 900px) {
   /* #region Main Style */
-  .boxTwo {
-    display: block;
-    grid-column: 1 / 3;
-  }
   .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  #burger {
+  /* #region Nav Style */
+  .boxTwo {
     display: block;
+    grid-column: 1 / 3;
   }
   .fa {
     display: none;
@@ -172,6 +170,19 @@ footer p {
   .navLinks {
     display: inline-block;
   }
+  nav {
+    background-color: #000000;
+  }
+  nav a {
+    display: inline-block;
+  }
+  nav a.icon {
+    display: none;
+  }
+  nav #burger {
+    display: inline-block;
+  }
+  /* #endregion Nav Style */
   /* #endregion Main Style */
 }
 /* #endregion Tablet Style */
@@ -187,6 +198,10 @@ footer p {
   }
   .grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+  #wrapper {
+    max-width: 1440px;
+    margin: 0 auto 0 auto;
   }
   /* #endregion Main Style */
 }
