@@ -1,14 +1,193 @@
-nav ul {
-  margin: 0;
-  padding: 6px;
-  list-style: none;
+/* #region Imports */
+/* #region Main Palette */
+/* #endregion Main Palette */
+/* #region Greyscale Palette */
+/* #endregion Greyscale Palette */
+/* #endregion Imports */
+/* #region Global Style */
+/* #region Nav Style */
+nav {
+  overflow: hidden;
+  background-color: #303030;
+  position: relative;
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  /* Style navigation menu links */
+  /* Style the hamburger menu */
+  /* Style the active link (or home/logo) */
 }
-nav li {
-  display: inline-block;
+nav a.logo {
+  padding: 0 0 0 10px;
+}
+nav #burger {
+  display: none;
 }
 nav a {
-  display: block;
-  padding: 6px 12px;
+  color: #dcdcdc;
+  padding: 14px 16px;
   text-decoration: none;
-  color: blue;
+  display: block;
 }
+nav a.icon {
+  background: #000000;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+nav .active {
+  background-color: #000000;
+  color: #ff0000;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 2em;
+}
+nav .inactive {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.1em;
+}
+nav .inactive:hover {
+  background-color: #ddd;
+  color: black;
+}
+nav .fa-bars {
+  color: #ffffff;
+  font-size: 1.8em;
+}
+.navLinks {
+  display: none;
+}
+/* #endregion Nav Style */
+/* #region Main Style */
+/* #region Main Mixins */
+.defaultStructures {
+  padding: 10px;
+  margin: 5px;
+  background-color: #dcdcdc;
+}
+.defaultStructures h2 {
+  font-family: 'Heebo', sans-serif;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+.defaultStructures p {
+  font-family: 'Open Sans', sans-serif;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+/* #endregion Main Mixins */
+body {
+  background-color: #a9a9a9;
+}
+main {
+  background-color: #a9a9a9;
+}
+.boxOne {
+  display: none;
+  padding: 10px;
+  margin: 5px;
+  background-color: #dcdcdc;
+}
+.boxOne h2 {
+  font-family: 'Heebo', sans-serif;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+.boxOne p {
+  font-family: 'Open Sans', sans-serif;
+}
+.boxTwo {
+  display: none;
+  padding: 10px;
+  margin: 5px;
+  background-color: #dcdcdc;
+}
+.boxTwo h2 {
+  font-family: 'Heebo', sans-serif;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+.boxTwo p {
+  font-family: 'Open Sans', sans-serif;
+}
+.boxThree {
+  padding: 10px;
+  margin: 5px;
+  background-color: #dcdcdc;
+}
+.boxThree h2 {
+  font-family: 'Heebo', sans-serif;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+.boxThree p {
+  font-family: 'Open Sans', sans-serif;
+}
+.boxFour {
+  padding: 10px;
+  margin: 5px;
+  background-color: #dcdcdc;
+}
+.boxFour h2 {
+  font-family: 'Heebo', sans-serif;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+.boxFour p {
+  font-family: 'Open Sans', sans-serif;
+}
+/* #endregion Main Style */
+/* #region Footer Style */
+footer {
+  background-color: #303030;
+  padding: 10px;
+}
+footer p {
+  font-size: 0.9em;
+  font-family: 'Open Sans', sans-serif;
+  color: #dcdcdc;
+  text-align: center;
+}
+/* #endregion Footer Style */
+/* #endregion Global Style */
+/* #region Tablet Style */
+@media (min-width: 900px) {
+  /* #region Main Style */
+  .boxTwo {
+    display: block;
+    grid-column: 1 / 3;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #burger {
+    display: block;
+  }
+  .fa {
+    display: none;
+  }
+  .navLinks {
+    display: inline-block;
+  }
+  /* #endregion Main Style */
+}
+/* #endregion Tablet Style */
+/* #region Desktop Style */
+@media (min-width: 1440px) {
+  /* #region Main Style */
+  .boxOne {
+    display: block;
+    grid-column: 1 / 4;
+  }
+  .boxTwo {
+    grid-column: 1 / 2;
+  }
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* #endregion Main Style */
+}
+/* #endregion Desktop Style */
