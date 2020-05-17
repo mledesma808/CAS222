@@ -137,6 +137,27 @@ main {
 .boxFour p {
   font-family: 'Open Sans', sans-serif;
 }
+h1 {
+  font-size: 1.2em;
+  font-family: 'Work Sans', sans-serif;
+  text-align: center;
+  margin: 5px 0;
+}
+form {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  padding: 5px 5px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+form label {
+  font-family: 'Open Sans', sans-serif;
+}
+/* #region Form Style */
+#honeypot {
+  display: none;
+}
+/* #endregion Form Style */
 /* #endregion Main Style */
 /* #region Footer Style */
 footer {

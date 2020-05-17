@@ -61,9 +61,8 @@ nav {
     font-size: 1.8em;
   }
 
-
-
 }
+
 .navLinks {
   display: none;
 }
@@ -102,6 +101,7 @@ nav {
 body {
   background-color: @grey;
 }
+
 main {
   background-color: @grey;
 }
@@ -123,6 +123,34 @@ main {
 .boxFour {
   .defaultStructures();
 }
+
+h1 {
+  font-size: 1.2em;
+  font-family: @heavyWeight;
+  text-align: center;
+  margin: 5px 0;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  padding: 5px 5px;
+  max-width:600px;
+  margin: 0 auto;
+
+  label {
+    font-family: @lightWeight;
+  }
+  
+}
+
+/* #region Form Style */
+
+#honeypot {
+  .hide();
+}
+/* #endregion Form Style */
+
 /* #endregion Main Style */
 
 /* #region Footer Style */

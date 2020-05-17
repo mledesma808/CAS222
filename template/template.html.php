@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <title>Ace In The Hole</title>
-  <meta name="description" content="">
+  <meta name="description" content="Ace In The Hole Multisports Events offers events for Every Body.">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <?php include '../includes/link.inc.html.php' ?>
