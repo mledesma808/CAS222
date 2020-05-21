@@ -6,6 +6,7 @@ if (isset($_POST['myName']) AND empty($_POST['honeypot'])) {
     $myName = $_POST['myName'];
     $myEmail = $_POST['myEmail'];
     $myQuestion = $_POST['myQuestion'];
+    $myType = $_POST['myType'];
     date_default_timezone_set('Etc/UTC');
 
     require '../PHPMailer/PHPMailerAutoload.php';
@@ -14,14 +15,14 @@ if (isset($_POST['myName']) AND empty($_POST['honeypot'])) {
     $mail = new PHPMailer;
     //Tell PHPMailer to use SMTP - requires a local mail server
     //Faster and safer than using mail()
-    $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+    //$mail->SMTPDebug = SMTP::DEBUG_SERVER;
     $mail->isSMTP();
     $mail->SMTPAuth = true;
     $mail->Port = 587;
     $mail->Host = 'mail.michaelledesma.webhostingforstudents.com';
     $mail->Username = 'phpmailer@michaelledesma.webhostingforstudents.com';
     $mail->Password = '!iSnW394';
-    //  $mail->Debugoutput = function($str, $level) {echo "debug level $level; message: $str";};
+    //$mail->Debugoutput = function($str, $level) {echo "debug level $level; message: $str";};
 
     //Use a fixed address in your own domain as the from address
     //**DO NOT** use the submitter's address here as it will be forgery
@@ -40,6 +41,7 @@ if (isset($_POST['myName']) AND empty($_POST['honeypot'])) {
         $mail->Body = <<<EOT
 Email: $myEmail
 Name: $myName
+Type: $myType
 Message: $myQuestion
 EOT;
         //Send the message, check for errors

@@ -19,6 +19,7 @@
                 <p>Our records show you submitted the following:<br>
                   Name: <?php echo htmlspecialchars($myName, ENT_QUOTES, 'UTF-8') ?><br>
                   Email: <?php echo htmlspecialchars($myEmail, ENT_QUOTES, 'UTF-8') ?><br>
+                  Type: <?php echo htmlspecialchars($myType, ENT_QUOTES, 'UTF-8') ?><br>
                   Question: <?php echo htmlspecialchars($myQuestion, ENT_QUOTES, 'UTF-8') ?><br>
                 </p>
             </main>

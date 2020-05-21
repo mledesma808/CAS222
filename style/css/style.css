@@ -76,6 +76,9 @@ nav .fa-bars {
 .show {
   display: block;
 }
+.radioButton {
+  margin-left: auto;
+}
 /* #endregion Main Mixins */
 body {
   background-color: #a9a9a9;
@@ -152,6 +155,27 @@ form {
 }
 form label {
   font-family: 'Open Sans', sans-serif;
+}
+form #athlete {
+  margin-left: auto;
+}
+form #volunteer {
+  margin-left: auto;
+}
+form #interested {
+  margin-left: auto;
+}
+form .radioButtonLabel {
+  padding-left: 5px;
+}
+.registrationForm {
+  grid-template-columns: 120px 1fr;
+}
+.registrationLabel {
+  font-size: 0.9em;
+}
+p {
+  margin: 5px 5px;
 }
 /* #region Form Style */
 #honeypot {

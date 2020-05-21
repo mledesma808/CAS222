@@ -17,12 +17,25 @@
       <h1>Questions? We'd love to hear from you!</h1>
       <form method="post" action=" " id="inquiryForm">
         <input type="text" name="honeypot" id="honeypot" value="" alt="if you fill this field out then your email will not be sent"/>
+       
         <label for="myName">Name:</label>
-          <input type="text" name="myName" id="myName">
+        <input type="text" name="myName" id="myName">
+      
         <label for="myEmail">E-mail:</label>
-          <input type="text" name="myEmail" id="myEmail">
+        <input type="text" name="myEmail" id="myEmail">
+    
+        <input type="radio" name="myType" id="athlete" value="Athlete">
+        <label for="athlete" class="radioButtonLabel">Athlete</label>
+            
+        <input type="radio" name="myType" id="volunteer" value="Volunteer">
+        <label for="volunteer" class="radioButtonLabel">Volunteer</label>
+    
+        <input type="radio" name="myType" id="interested" value="Interested Party">
+        <label for="interested" class="radioButtonLabel">Interested Party</label>
+
         <label for="myQuestion">Question:</label>
-          <textarea form="inquiryForm" rows="10" cols="50" name="myQuestion" id="myQuestion"></textarea>
+        <textarea form="inquiryForm" rows="10" cols="50" name="myQuestion" id="myQuestion"></textarea>
+     
         <input id="mySubmit" type="submit" value="Submit">
       </form>
     </main>

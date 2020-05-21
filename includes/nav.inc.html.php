@@ -1,4 +1,4 @@
-<?php define ("BASE_URL", "aith/") ?>
+<?php define ("BASE_URL", "https://www.michaelledesma.webhostingforstudents.com/cas222/aith/") ?>
 <nav>
     <a href="<?php echo BASE_URL; ?>" class="active ">AITH</a>
     <div id="burger">

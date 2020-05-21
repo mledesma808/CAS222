@@ -97,6 +97,10 @@ nav {
     display: block;
   }
 
+  .radioButton {
+    margin-left: auto;
+  }
+
    /* #endregion Main Mixins */
 body {
   background-color: @grey;
@@ -141,7 +145,33 @@ form {
   label {
     font-family: @lightWeight;
   }
+
+  #athlete {
+    .radioButton();
+  }
   
+  #volunteer {
+    .radioButton();
+  }
+
+  #interested {
+    .radioButton();
+  }
+
+  .radioButtonLabel {
+    padding-left: 5px;
+  }
+}
+
+.registrationForm {
+  grid-template-columns: 120px 1fr;
+}
+
+.registrationLabel {
+  font-size: .9em;
+}
+p {
+  margin: 5px 5px;
 }
 
 /* #region Form Style */
