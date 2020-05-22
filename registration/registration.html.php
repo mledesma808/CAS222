@@ -51,10 +51,21 @@
         </select>
 
         <label class="registrationLabel" for="mysaturdayEvents">Saturday Events:</label>
-        <textarea name="mysaturdayEvents" id="mysaturdayEvents" rows="3" cols="20" required></textarea>
+        <select size="1" name="mysaturdayEvents" id="mysaturdayEvents" required>
+          <option>Choose Your Event</option>
+          <option value="Long Course Triathlon">Long Course Triathlon</option>
+          <option value="Olympic Triathlon">Olympic Triathlon</option>
+          <option value="10K">10K</option>
+          <option value="Half Marathon">Half Marathon</option>
+        </select>
 
         <label class="registrationLabel" for="mysundayEvents">Sunday Events:</label>
-        <textarea name="mysundayEvents" id="mysundayEvents" rows="3" cols="20" required></textarea>
+        <select size="1" name="mysundayEvents" id="mysundayEvents" required>
+          <option>Choose Your Event</option>
+          <option value="Sprint Triathlon">Sprint Triathlon</option>
+          <option value="Try-a-Tri">Try-a-Try</option>
+          <option value="Splash n Dash">Splash n Dash</option>
+        </select>
 
         <label class="registrationLabel" for="myaccommodations">Special Needs:</label>
         <textarea name="myaccommodations" id="myaccommodations" rows="3" cols="20" required></textarea>
