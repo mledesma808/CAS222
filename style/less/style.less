@@ -73,28 +73,49 @@ nav {
 /* #region Main Style */
 
 /* #region Main Mixins */
-  .defaultStructures {
+  .defaultStructures() {
     padding: 10px;
     margin: 5px;
     background-color: @grey-light;
 
+    h1 {
+      font-size: 1.2em;
+      font-family: @heavyWeight;
+      text-align: center;
+    }
+
     h2 {
       font-family: @mediumWeight;
       font-size: 1.2em;
-      margin-bottom: 5px;
+    }
+
+    h3 {
+      font-family: @mediumWeight;
+      font-size:1.1em;
+
     }
 
     p {
+      font-family: @lightWeight
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 25px;
+      margin-bottom: 10px;
+    }
+
+    li {
       font-family: @lightWeight;
+    }
+
+    section {
+      .defaultPadding;
     }
   }
 
-  .hide {
+  .hide() {
     display: none;
-  }
-
-  .show {
-    display: block;
   }
 
   .radioButton {
@@ -110,29 +131,12 @@ main {
   background-color: @grey;
 }
 
-.boxOne {
-  .hide();
+.boxOne, .boxTwo, .boxThree, .boxFour, .boxFive {
   .defaultStructures();
 }
 
-.boxTwo {
-  .hide();
-  .defaultStructures();
-}
-
-.boxThree {
-  .defaultStructures();
-}
-
-.boxFour {
-  .defaultStructures();
-}
-
-h1 {
-  font-size: 1.2em;
-  font-family: @heavyWeight;
-  text-align: center;
-  margin: 5px 0;
+.bigBold {
+  font-family: @mediumWeight;
 }
 
 form {
@@ -200,6 +204,61 @@ footer {
 
 /* #endregion Footer Style */
 
+/* #region FAQ Style */
+/* definition list */
+
+dl {
+  margin: 0 10px;
+}
+dt, dd {
+  margin: 2px 0;
+}
+
+dt {
+   cursor: pointer;
+   font-size: 1.5em;
+   font-family: @mediumWeight;
+}
+dt:hover {
+   color: @red-dark;
+}
+
+dd {
+   font-size: 1.2em;
+   font-style: italic;
+   font-family: @lightWeight;
+}
+
+/* arrow icon left */
+
+dt:before {
+   border: 0.5em solid;
+   border-color: transparent transparent transparent #f2eeef;
+   content: '';
+   display: inline-block;
+   height: 0;
+   margin-right: 0.5em;
+   vertical-align: middle;
+   width: 0;
+}
+
+dt:hover:before {
+   border-left-color: @red-dark;
+
+}
+
+/* arrow icon down */
+
+dt.open:before {
+   border-color: #f2eeef transparent transparent transparent;
+   border-bottom-width: 0;
+}
+   
+dt.open:hover:before {
+   border-left-color: transparent;
+   border-top-color: @red-dark;
+}
+/* #endregion FAQ Style */
 
 /* #endregion Global Style */
 
@@ -215,7 +274,6 @@ footer {
   /* #region Nav Style */
 
   .boxTwo {
-    .show();
     grid-column: 1 e("/") 3;
   }
 
@@ -253,7 +311,6 @@ footer {
   @media(min-width: 1440px){
   /* #region Main Style */
     .boxOne {
-      .show();
       grid-column: 1 e("/") 4;
     }
 

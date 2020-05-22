@@ -57,25 +57,6 @@ nav .fa-bars {
 /* #endregion Nav Style */
 /* #region Main Style */
 /* #region Main Mixins */
-.defaultStructures {
-  padding: 10px;
-  margin: 5px;
-  background-color: #dcdcdc;
-}
-.defaultStructures h2 {
-  font-family: 'Heebo', sans-serif;
-  font-size: 1.2em;
-  margin-bottom: 5px;
-}
-.defaultStructures p {
-  font-family: 'Open Sans', sans-serif;
-}
-.hide {
-  display: none;
-}
-.show {
-  display: block;
-}
 .radioButton {
   margin-left: auto;
 }
@@ -86,65 +67,76 @@ body {
 main {
   background-color: #a9a9a9;
 }
-.boxOne {
-  display: none;
+.boxOne,
+.boxTwo,
+.boxThree,
+.boxFour,
+.boxFive {
   padding: 10px;
   margin: 5px;
   background-color: #dcdcdc;
 }
-.boxOne h2 {
-  font-family: 'Heebo', sans-serif;
-  font-size: 1.2em;
-  margin-bottom: 5px;
-}
-.boxOne p {
-  font-family: 'Open Sans', sans-serif;
-}
-.boxTwo {
-  display: none;
-  padding: 10px;
-  margin: 5px;
-  background-color: #dcdcdc;
-}
-.boxTwo h2 {
-  font-family: 'Heebo', sans-serif;
-  font-size: 1.2em;
-  margin-bottom: 5px;
-}
-.boxTwo p {
-  font-family: 'Open Sans', sans-serif;
-}
-.boxThree {
-  padding: 10px;
-  margin: 5px;
-  background-color: #dcdcdc;
-}
-.boxThree h2 {
-  font-family: 'Heebo', sans-serif;
-  font-size: 1.2em;
-  margin-bottom: 5px;
-}
-.boxThree p {
-  font-family: 'Open Sans', sans-serif;
-}
-.boxFour {
-  padding: 10px;
-  margin: 5px;
-  background-color: #dcdcdc;
-}
-.boxFour h2 {
-  font-family: 'Heebo', sans-serif;
-  font-size: 1.2em;
-  margin-bottom: 5px;
-}
-.boxFour p {
-  font-family: 'Open Sans', sans-serif;
-}
-h1 {
+.boxOne h1,
+.boxTwo h1,
+.boxThree h1,
+.boxFour h1,
+.boxFive h1 {
   font-size: 1.2em;
   font-family: 'Work Sans', sans-serif;
   text-align: center;
   margin: 5px 0;
+}
+.boxOne h2,
+.boxTwo h2,
+.boxThree h2,
+.boxFour h2,
+.boxFive h2 {
+  font-family: 'Heebo', sans-serif;
+  font-size: 1.2em;
+  margin: 5px 0;
+}
+.boxOne h3,
+.boxTwo h3,
+.boxThree h3,
+.boxFour h3,
+.boxFive h3 {
+  font-family: 'Heebo', sans-serif;
+  font-size: 1.1em;
+  margin: 5px 0;
+}
+.boxOne p,
+.boxTwo p,
+.boxThree p,
+.boxFour p,
+.boxFive p {
+  font-family: 'Open Sans', sans-serif;
+  margin: 5px 0;
+}
+.boxOne ul,
+.boxTwo ul,
+.boxThree ul,
+.boxFour ul,
+.boxFive ul {
+  list-style-type: disc;
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+.boxOne li,
+.boxTwo li,
+.boxThree li,
+.boxFour li,
+.boxFive li {
+  font-family: 'Open Sans', sans-serif;
+}
+.boxOne section,
+.boxTwo section,
+.boxThree section,
+.boxFour section,
+.boxFive section {
+  padding: 5px 0;
+}
+.bigBold {
+  font-family: 'Heebo', sans-serif;
 }
 form {
   display: grid;
@@ -195,6 +187,52 @@ footer p {
   text-align: center;
 }
 /* #endregion Footer Style */
+/* #region FAQ Style */
+/* definition list */
+dl {
+  margin: 0 10px;
+}
+dt,
+dd {
+  margin: 2px 0;
+}
+dt {
+  cursor: pointer;
+  font-size: 1.5em;
+  font-family: 'Heebo', sans-serif;
+}
+dt:hover {
+  color: #990000;
+}
+dd {
+  font-size: 1.2em;
+  font-style: italic;
+  font-family: 'Open Sans', sans-serif;
+}
+/* arrow icon left */
+dt:before {
+  border: 0.5em solid;
+  border-color: transparent transparent transparent #f2eeef;
+  content: '';
+  display: inline-block;
+  height: 0;
+  margin-right: 0.5em;
+  vertical-align: middle;
+  width: 0;
+}
+dt:hover:before {
+  border-left-color: #990000;
+}
+/* arrow icon down */
+dt.open:before {
+  border-color: #f2eeef transparent transparent transparent;
+  border-bottom-width: 0;
+}
+dt.open:hover:before {
+  border-left-color: transparent;
+  border-top-color: #990000;
+}
+/* #endregion FAQ Style */
 /* #endregion Global Style */
 /* #region Tablet Style */
 @media (min-width: 900px) {
@@ -205,7 +243,6 @@ footer p {
   }
   /* #region Nav Style */
   .boxTwo {
-    display: block;
     grid-column: 1 / 3;
   }
   .fa {
@@ -234,7 +271,6 @@ footer p {
 @media (min-width: 1440px) {
   /* #region Main Style */
   .boxOne {
-    display: block;
     grid-column: 1 / 4;
   }
   .boxTwo {
