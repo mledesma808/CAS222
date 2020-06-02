@@ -46,9 +46,9 @@
         </dd>
       </dl>
     </main>
-      <?php include '../includes/footer.inc.html.php' ?>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="<?php echo BASE_URL; ?>scripts/faq.js"></script>
+    <?php include '../includes/footer.inc.html.php' ?>
   </div>
+    <?php include '../includes/jquery.inc.html.php' ?>
+    <script src="<?php echo BASE_URL; ?>scripts/faq.js"></script>
 </body>
 </html>

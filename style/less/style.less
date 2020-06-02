@@ -5,9 +5,9 @@
 
 /* #endregion Imports */
 
-/* #region Global Style */
+/* #region Global */
 
-/* #region Nav Style */
+/* #region Nav */
 nav {
   overflow: hidden;
   background-color: @grey-dark;
@@ -22,7 +22,7 @@ nav {
     display: none;
   }
 
-  /* Style navigation menu links */
+  /* navigation menu links */
   a {
     color: @grey-light;
     padding: 14px 16px;
@@ -30,7 +30,7 @@ nav {
     display: block;
   }
 
-  /* Style the hamburger menu */
+  /* the hamburger menu */
   a.icon {
     background: @black;
     display: block;
@@ -39,7 +39,7 @@ nav {
     top: 0;
   }
 
-  /* Style the active link (or home/logo) */
+  /* the active link (or home/logo) */
   .active {
     background-color: @black;
     color: @red;
@@ -68,21 +68,15 @@ nav {
 }
 
 
-/* #endregion Nav Style */
+/* #endregion Nav */
 
-/* #region Main Style */
+/* #region Main */
 
 /* #region Main Mixins */
   .defaultStructures() {
     padding: 10px;
     margin: 5px;
     background-color: @grey-light;
-
-    h1 {
-      font-size: 1.2em;
-      font-family: @heavyWeight;
-      text-align: center;
-    }
 
     h2 {
       font-family: @mediumWeight;
@@ -110,7 +104,7 @@ nav {
     }
 
     section {
-      .defaultPadding;
+      padding: 5px 0;
     }
   }
 
@@ -131,8 +125,18 @@ main {
   background-color: @grey;
 }
 
-.boxOne, .boxTwo, .boxThree, .boxFour, .boxFive {
+h1 {
+  font-size: 1.2em;
+  font-family: @heavyWeight;
+  text-align: center;
+}
+
+.boxOne, .boxTwo, .boxThree, .boxFour, .boxFive, .boxSix, .boxSeven {
   .defaultStructures();
+}
+
+.boxFour, .boxSeven {
+  display: none;
 }
 
 .bigBold {
@@ -174,20 +178,21 @@ form {
 .registrationLabel {
   font-size: .9em;
 }
+
 p {
   margin: 5px 5px;
 }
 
-/* #region Form Style */
+/* #region Form */
 
 #honeypot {
   .hide();
 }
-/* #endregion Form Style */
+/* #endregion Form */
 
-/* #endregion Main Style */
+/* #endregion Main */
 
-/* #region Footer Style */
+/* #region Footer */
 
 footer {
   background-color: @grey-dark;
@@ -200,11 +205,31 @@ footer {
     text-align: center;  
   }
 
+  i.fab {
+    font-size: 2em;
+    padding: 5px 10px;
+  }
+
+  .socialMedia {
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:link, a:visited {
+    color: @grey-light;
+  }
+  a:hover {
+    color: @grey-light;
+  }
+
 }
 
-/* #endregion Footer Style */
+/* #endregion Footer */
 
-/* #region FAQ Style */
+/* #region FAQ */
 /* definition list */
 
 dl {
@@ -216,7 +241,7 @@ dt, dd {
 
 dt {
    cursor: pointer;
-   font-size: 1.5em;
+   font-size: 1.1em;
    font-family: @mediumWeight;
 }
 dt:hover {
@@ -258,24 +283,53 @@ dt.open:hover:before {
    border-left-color: transparent;
    border-top-color: @red-dark;
 }
-/* #endregion FAQ Style */
+/* #endregion FAQ */
 
-/* #endregion Global Style */
+/* #region Showcase */
 
-/* #region Tablet Style */
+.bigPhoto {
+  display: none;
+}
+
+.thumbnail-inner {
+  max-width: 100%;
+}
+
+.thumbnail-item {
+  max-width: 100%;
+}
+
+/* #endregion Showcase */
+
+/* #region Feeds */
+
+.facebookCustom {
+  .defaultStructures();
+  text-align: center;
+  display: none;
+}
+
+.twitterCustom {
+  .defaultStructures();
+  text-align: center;
+  display: none;
+}
+
+.weatherCustom {
+  .defaultStructures();
+  text-align: center;
+
+}
+
+/* #endregion Feeds */
+
+/* #endregion Global */
+
+/* #region Tablet */
+
 @media(min-width: 900px){
-  /* #region Main Style */
 
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  /* #region Nav Style */
-
-  .boxTwo {
-    grid-column: 1 e("/") 3;
-  }
+  /* #region Nav */
 
   .fa {
     display: none;
@@ -301,31 +355,108 @@ dt.open:hover:before {
     }
   }
 
-  /* #endregion Nav Style */
+  /* #endregion Nav */
 
-  /* #endregion Main Style */
+  /* #region Main */
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .boxOne, .boxTwo, .boxSix, .weatherCustom {
+    grid-column: 1 e("/") 3;
+  }
+
+  .boxFive {
+    text-align: center; 
+  }
+
+  /* #endregion Main */
+
+  /* #region Showcase */
+  
+
+  .gallery-photos {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .bigPhoto {
+    display: block;
+    text-align: center;
+  }
+
+  .thumbnail {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+  }
+
+  /* #endregion Showcase */
 }
-/* #endregion Tablet Style */
+/* #endregion Tablet */
 
-/* #region Desktop Style */
+/* #region Desktop */
   @media(min-width: 1440px){
-  /* #region Main Style */
-    .boxOne {
-      grid-column: 1 e("/") 4;
-    }
-
-    .boxTwo {
-      grid-column: 1 e("/") 2;
-    }
+  /* #region Main */
 
     .grid {
       grid-template-columns: repeat(3, 1fr);
+    }
+
+    .boxOne, .boxTwo, .boxSix {
+      grid-column: 1 e("/") 4;
+    }
+
+    .boxFour, .boxSeven {
+      display: block;
+      margin-top: auto 5px;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+
+    .boxSeven {
+      display: block;
+      margin-top: auto 5px;
+      padding-top: 100px;
+    }
+
+    .imageBox { 
+      max-width: 100%;
+      object-fit: cover;
     }
 
     #wrapper {
       max-width: 1440px;
       margin: 0 auto 0 auto;
     }
-  /* #endregion Main Style */
+  /* #endregion Main */
+  
+  /* #region Showcase */
+
+    .gallery-photos {
+      padding: 0 270px;
+    }
+
+  /* #endregion Showcase */
+
+  /* #region Feeds */
+
+    .facebookCustom {
+      display: block;
+    }
+
+    .twitterCustom {
+      display: block;
+    }
+
+    .weatherCustom {
+      grid-column: 2 e("/") 3;
+      padding-top: 150px;
+    }
+
+  /* #endRegion Feeds */
+
   }
-/* #endregion Desktop Style */
+/* #endregion Desktop */

@@ -1,3 +1,5 @@
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0"></script>
 <nav>
     <a href="<?php echo BASE_URL; ?>" class="active ">AITH</a>
     <div id="burger">

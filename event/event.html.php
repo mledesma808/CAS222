@@ -54,7 +54,26 @@
           </section>
         </section>
       </article>
-      <article class="boxFour">
+      <aside class="boxFour">
+        <img src="<?php echo BASE_URL; ?>images/original/ace11.jpg" class="imageBox">
+      </aside>
+      <article class="boxFive">
+        <h2>Starting Times</h2>
+        <section>
+          <h3>Saturday</h3>
+          <p><span class="bigBold">Long Course Triathlon:</span> 7:00 AM</p>
+          <p><span class="bigBold">Olympic Triathlon:</span> 7:30 AM</p>
+          <p><span class="bigBold">10K:</span> 7:15 AM</p>
+          <p><span class="bigBold">Half Marathon:</span> 7:15 AM</p>
+        </section>
+        <section>
+          <h3>Sunday</h3>
+          <p><span class="bigBold">Sprint Triathlon:</span> 8:00 AM</p>
+          <p><span class="bigBold">Try-a-Tri:</span> 8:20 AM</p>
+          <p><span class="bigBold">Splash n Dash:</span> 12:00 PM</p>
+        </section>
+      </article>
+      <article class="boxSix">
         <h2>PACKET PICK UP</h2>
         <p>All packet pick up will occur at Why Worry Racing, 123 NW Everett, Portland OR. Packet pick up hours: Thursday 8-5, Friday 9-noon. No day of event packet pick up.</p>
         <section>
@@ -73,22 +92,11 @@
           <p><span class="bigBold">Splash n' Dash:</span> Kids event for participants ages 4 to 15. This is a 100 yard swim and a 50 yard dash. It is free if an adult registers for an event otherwise it is $25.</p>
         </section>
       </article>
-      <article class="boxFive">
-        <h2>Starting Times</h2>
-        <section>
-          <h3>Saturday</h3>
-          <p><span class="bigBold">Long Course Triathlon:</span> 7:00 AM</p>
-          <p><span class="bigBold">Olympic Triathlon:</span> 7:30 AM</p>
-          <p><span class="bigBold">10K:</span> 7:15 AM</p>
-          <p><span class="bigBold">Half Marathon:</span> 7:15 AM</p>
-        </section>
-        <section>
-          <h3>Sunday</h3>
-          <p><span class="bigBold">Sprint Triathlon:</span> 8:00 AM</p>
-          <p><span class="bigBold">Try-a-Tri:</span> 8:20 AM</p>
-          <p><span class="bigBold">Splash n Dash:</span> 12:00 PM</p>
-        </section>
-      </article>
+
+      <?php include '../includes/facebook.inc.html.php' ?>
+      <?php include '../includes/weather.inc.html.php' ?>
+      <?php include '../includes/twitter.inc.html.php' ?>
+
     </main>
     <?php include '../includes/footer.inc.html.php'?>
   </div>

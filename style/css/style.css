@@ -4,16 +4,16 @@
 /* #region Greyscale Palette */
 /* #endregion Greyscale Palette */
 /* #endregion Imports */
-/* #region Global Style */
-/* #region Nav Style */
+/* #region Global */
+/* #region Nav */
 nav {
   overflow: hidden;
   background-color: #303030;
   position: relative;
   /* Hide the links inside the navigation menu (except for logo/home) */
-  /* Style navigation menu links */
-  /* Style the hamburger menu */
-  /* Style the active link (or home/logo) */
+  /* navigation menu links */
+  /* the hamburger menu */
+  /* the active link (or home/logo) */
 }
 nav a.logo {
   padding: 0 0 0 10px;
@@ -54,8 +54,8 @@ nav .fa-bars {
 .navLinks {
   display: none;
 }
-/* #endregion Nav Style */
-/* #region Main Style */
+/* #endregion Nav */
+/* #region Main */
 /* #region Main Mixins */
 .radioButton {
   margin-left: auto;
@@ -67,56 +67,58 @@ body {
 main {
   background-color: #a9a9a9;
 }
+h1 {
+  font-size: 1.2em;
+  font-family: 'Work Sans', sans-serif;
+  text-align: center;
+}
 .boxOne,
 .boxTwo,
 .boxThree,
 .boxFour,
-.boxFive {
+.boxFive,
+.boxSix,
+.boxSeven {
   padding: 10px;
   margin: 5px;
   background-color: #dcdcdc;
-}
-.boxOne h1,
-.boxTwo h1,
-.boxThree h1,
-.boxFour h1,
-.boxFive h1 {
-  font-size: 1.2em;
-  font-family: 'Work Sans', sans-serif;
-  text-align: center;
-  margin: 5px 0;
 }
 .boxOne h2,
 .boxTwo h2,
 .boxThree h2,
 .boxFour h2,
-.boxFive h2 {
+.boxFive h2,
+.boxSix h2,
+.boxSeven h2 {
   font-family: 'Heebo', sans-serif;
   font-size: 1.2em;
-  margin: 5px 0;
 }
 .boxOne h3,
 .boxTwo h3,
 .boxThree h3,
 .boxFour h3,
-.boxFive h3 {
+.boxFive h3,
+.boxSix h3,
+.boxSeven h3 {
   font-family: 'Heebo', sans-serif;
   font-size: 1.1em;
-  margin: 5px 0;
 }
 .boxOne p,
 .boxTwo p,
 .boxThree p,
 .boxFour p,
-.boxFive p {
+.boxFive p,
+.boxSix p,
+.boxSeven p {
   font-family: 'Open Sans', sans-serif;
-  margin: 5px 0;
 }
 .boxOne ul,
 .boxTwo ul,
 .boxThree ul,
 .boxFour ul,
-.boxFive ul {
+.boxFive ul,
+.boxSix ul,
+.boxSeven ul {
   list-style-type: disc;
   margin-left: 25px;
   margin-bottom: 10px;
@@ -125,15 +127,23 @@ main {
 .boxTwo li,
 .boxThree li,
 .boxFour li,
-.boxFive li {
+.boxFive li,
+.boxSix li,
+.boxSeven li {
   font-family: 'Open Sans', sans-serif;
 }
 .boxOne section,
 .boxTwo section,
 .boxThree section,
 .boxFour section,
-.boxFive section {
+.boxFive section,
+.boxSix section,
+.boxSeven section {
   padding: 5px 0;
+}
+.boxFour,
+.boxSeven {
+  display: none;
 }
 .bigBold {
   font-family: 'Heebo', sans-serif;
@@ -169,13 +179,13 @@ form .radioButtonLabel {
 p {
   margin: 5px 5px;
 }
-/* #region Form Style */
+/* #region Form */
 #honeypot {
   display: none;
 }
-/* #endregion Form Style */
-/* #endregion Main Style */
-/* #region Footer Style */
+/* #endregion Form */
+/* #endregion Main */
+/* #region Footer */
 footer {
   background-color: #303030;
   padding: 10px;
@@ -186,8 +196,25 @@ footer p {
   color: #dcdcdc;
   text-align: center;
 }
-/* #endregion Footer Style */
-/* #region FAQ Style */
+footer i.fab {
+  font-size: 2em;
+  padding: 5px 10px;
+}
+footer .socialMedia {
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+}
+footer a:link,
+footer a:visited {
+  color: #dcdcdc;
+}
+footer a:hover {
+  color: #dcdcdc;
+}
+/* #endregion Footer */
+/* #region FAQ */
 /* definition list */
 dl {
   margin: 0 10px;
@@ -198,7 +225,7 @@ dd {
 }
 dt {
   cursor: pointer;
-  font-size: 1.5em;
+  font-size: 1.1em;
   font-family: 'Heebo', sans-serif;
 }
 dt:hover {
@@ -232,19 +259,110 @@ dt.open:hover:before {
   border-left-color: transparent;
   border-top-color: #990000;
 }
-/* #endregion FAQ Style */
-/* #endregion Global Style */
-/* #region Tablet Style */
+/* #endregion FAQ */
+/* #region Showcase */
+.bigPhoto {
+  display: none;
+}
+.thumbnail-inner {
+  max-width: 100%;
+}
+.thumbnail-item {
+  max-width: 100%;
+}
+/* #endregion Showcase */
+/* #region Feeds */
+.facebookCustom {
+  padding: 10px;
+  margin: 5px;
+  background-color: #dcdcdc;
+  text-align: center;
+  display: none;
+}
+.facebookCustom h2 {
+  font-family: 'Heebo', sans-serif;
+  font-size: 1.2em;
+}
+.facebookCustom h3 {
+  font-family: 'Heebo', sans-serif;
+  font-size: 1.1em;
+}
+.facebookCustom p {
+  font-family: 'Open Sans', sans-serif;
+}
+.facebookCustom ul {
+  list-style-type: disc;
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+.facebookCustom li {
+  font-family: 'Open Sans', sans-serif;
+}
+.facebookCustom section {
+  padding: 5px 0;
+}
+.twitterCustom {
+  padding: 10px;
+  margin: 5px;
+  background-color: #dcdcdc;
+  text-align: center;
+  display: none;
+}
+.twitterCustom h2 {
+  font-family: 'Heebo', sans-serif;
+  font-size: 1.2em;
+}
+.twitterCustom h3 {
+  font-family: 'Heebo', sans-serif;
+  font-size: 1.1em;
+}
+.twitterCustom p {
+  font-family: 'Open Sans', sans-serif;
+}
+.twitterCustom ul {
+  list-style-type: disc;
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+.twitterCustom li {
+  font-family: 'Open Sans', sans-serif;
+}
+.twitterCustom section {
+  padding: 5px 0;
+}
+.weatherCustom {
+  padding: 10px;
+  margin: 5px;
+  background-color: #dcdcdc;
+  text-align: center;
+}
+.weatherCustom h2 {
+  font-family: 'Heebo', sans-serif;
+  font-size: 1.2em;
+}
+.weatherCustom h3 {
+  font-family: 'Heebo', sans-serif;
+  font-size: 1.1em;
+}
+.weatherCustom p {
+  font-family: 'Open Sans', sans-serif;
+}
+.weatherCustom ul {
+  list-style-type: disc;
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+.weatherCustom li {
+  font-family: 'Open Sans', sans-serif;
+}
+.weatherCustom section {
+  padding: 5px 0;
+}
+/* #endregion Feeds */
+/* #endregion Global */
+/* #region Tablet */
 @media (min-width: 900px) {
-  /* #region Main Style */
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  /* #region Nav Style */
-  .boxTwo {
-    grid-column: 1 / 3;
-  }
+  /* #region Nav */
   .fa {
     display: none;
   }
@@ -263,26 +381,87 @@ dt.open:hover:before {
   nav #burger {
     display: inline-block;
   }
-  /* #endregion Nav Style */
-  /* #endregion Main Style */
+  /* #endregion Nav */
+  /* #region Main */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .boxOne,
+  .boxTwo,
+  .boxSix,
+  .weatherCustom {
+    grid-column: 1 / 3;
+  }
+  .boxFive {
+    text-align: center;
+  }
+  /* #endregion Main */
+  /* #region Showcase */
+  .gallery-photos {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .bigPhoto {
+    display: block;
+    text-align: center;
+  }
+  .thumbnail {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+  }
+  /* #endregion Showcase */
 }
-/* #endregion Tablet Style */
-/* #region Desktop Style */
+/* #endregion Tablet */
+/* #region Desktop */
 @media (min-width: 1440px) {
-  /* #region Main Style */
-  .boxOne {
-    grid-column: 1 / 4;
-  }
-  .boxTwo {
-    grid-column: 1 / 2;
-  }
+  /* #region Main */
   .grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .boxOne,
+  .boxTwo,
+  .boxSix {
+    grid-column: 1 / 4;
+  }
+  .boxFour,
+  .boxSeven {
+    display: block;
+    margin-top: auto 5px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .boxSeven {
+    display: block;
+    margin-top: auto 5px;
+    padding-top: 100px;
+  }
+  .imageBox {
+    max-width: 100%;
+    object-fit: cover;
   }
   #wrapper {
     max-width: 1440px;
     margin: 0 auto 0 auto;
   }
-  /* #endregion Main Style */
+  /* #endregion Main */
+  /* #region Showcase */
+  .gallery-photos {
+    padding: 0 270px;
+  }
+  /* #endregion Showcase */
+  /* #region Feeds */
+  .facebookCustom {
+    display: block;
+  }
+  .twitterCustom {
+    display: block;
+  }
+  .weatherCustom {
+    grid-column: 2 / 3;
+    padding-top: 150px;
+  }
+  /* #endRegion Feeds */
 }
-/* #endregion Desktop Style */
+/* #endregion Desktop */
