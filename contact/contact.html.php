@@ -14,7 +14,9 @@
   <div id="wrapper">
       <?php include '../includes/nav.inc.html.php' ?>
     <main>
+    <div class="formWrap">
       <h1>Questions? We'd love to hear from you!</h1>
+      <aside class="pictureCenter"><img class="imageDefaults" src="../images/banners/ace15.jpg" alt="Differently abled foot racer"></aside>
       <form method="post" action=" " id="inquiryForm">
         <input type="text" name="honeypot" id="honeypot" value="" alt="if you fill this field out then your email will not be sent"/>
        
@@ -38,6 +40,7 @@
      
         <input id="mySubmit" type="submit" value="Submit">
       </form>
+      </div>
     </main>
       <?php include '../includes/footer.inc.html.php' ?>
   </div>

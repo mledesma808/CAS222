@@ -55,7 +55,7 @@
         </section>
       </article>
       <aside class="boxFour">
-        <img src="<?php echo BASE_URL; ?>images/original/ace11.jpg" class="imageBox">
+        <img src="<?php echo BASE_URL; ?>images/original/ace11.jpg" class="imageBox" alt="Marathon runner's legs.">
       </aside>
       <article class="boxFive">
         <h2>Starting Times</h2>

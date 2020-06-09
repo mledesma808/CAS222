@@ -25,7 +25,7 @@
         <p>There is something for every level of athletic ability. The weekend includes a first timer triathlon, a sprint, Olympic, and Half-Iron triathlons and 10K and Half marathon runs. Come to experience your first race or come to compete to win, but make sure you come to have fun!</p>
       </article>
       <aside class="boxFour">
-        <img src="<?php echo BASE_URL; ?>images/original/ace11.jpg" class="imageBox">
+        <img src="<?php echo BASE_URL; ?>images/original/ace11.jpg" class="imageBox" alt="Swimmers starting a race">
       </aside>
       <article class="boxFive">
         <h2>Starting Times</h2>

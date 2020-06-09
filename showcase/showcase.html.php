@@ -11,11 +11,12 @@
   <div id="wrapper">
     <?php include '../includes/nav.inc.html.php'?>
     <main>
-      <h1>Ace In The Hole Showcase</h1>
       <article class="boxOne gallery-photos">  
+      <h1>Ace In The Hole Showcase</h1>
         <section class="bigPhoto">
           <img id="bigPhoto" src="" alt="">
           <br />
+          <p id="caption">Happy Jogger</p>
         </section>
         <section class="thumbnail">
           <div class="thumbnail-item"><img src="" alt="" class="thumbnail-inner"></div>

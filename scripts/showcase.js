@@ -21,12 +21,17 @@ $(document).ready(function(){
     var photoCaption;
     
     $("#bigPhoto").attr("src", imageFolder + "Happy_jogger.jpg");
+    $("#bigPhoto").attr("alt", "Happy jogger");
 
     var thumbNames = ["Start_of_a_swim_race_small.jpg", "Differently_abled_foot_race_participant_small.jpg", "Swim_team_starts_the_race_small.jpg", "Cyclists_in_the_sun_small.jpg", "Happy_jogger_small.jpg", "Cyclists_cross_the_finish_line_small.jpg", "Sprinting_hard_small.jpg", "Aerial_view_of_a_marathon_small.jpg"];
 
     var bigNames = ["Start_of_a_swim_race.jpg", "Differently_abled_foot_race_participant.jpg", "Swim_team_starts_the_race.jpg", "Cyclists_in_the_sun.jpg", "Happy_jogger.jpg", "Cyclists_cross_the_finish_line.jpg", "Sprinting_hard.jpg", "Aerial_view_of_a_marathon.jpg"];
 
     const mq = window.matchMedia( "(min-width: 900px)" );
+
+    $("img.thumbnail-inner").each(function(i) {
+        (this).alt = thumbNames[i].replace(".jpg", "").replace("../images/showcase/", "").replace(/_/g, " ");
+    });
 
     if (mq.matches) {
         $("img.thumbnail-inner").each(function (i) {
@@ -55,9 +60,11 @@ $(document).ready(function(){
 
         $("#bigPhoto").attr("src", imageSource);
 
-        photoCaption = imageSource.replace(".jpg", "").replace("images/", "");
+        photoCaption = imageSource.replace(".jpg", "").replace("../images/showcase/", "").replace(/_/g, " ");
 
         $("#caption").text(photoCaption);
+
+        $("#bigPhoto").attr("alt", photoCaption);
 
     })
 

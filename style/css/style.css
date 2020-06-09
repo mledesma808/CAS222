@@ -22,7 +22,7 @@ nav #burger {
   display: none;
 }
 nav a {
-  color: #dcdcdc;
+  color: #ffffff;
   padding: 14px 16px;
   text-decoration: none;
   display: block;
@@ -172,6 +172,9 @@ form .radioButtonLabel {
 }
 .registrationForm {
   grid-template-columns: 120px 1fr;
+  border-style: outset;
+  border-width: 5px;
+  border-color: #dcdcdc;
 }
 .registrationLabel {
   font-size: 0.9em;
@@ -182,7 +185,66 @@ p {
 .banner {
   width: 100%;
 }
+#registration,
+.formWrap,
+.defaults {
+  padding: 10px;
+  margin: 5px;
+  background-color: #dcdcdc;
+}
+#registration h2,
+.formWrap h2,
+.defaults h2 {
+  font-family: 'Heebo', sans-serif;
+  font-size: 1.2em;
+}
+#registration h3,
+.formWrap h3,
+.defaults h3 {
+  font-family: 'Heebo', sans-serif;
+  font-size: 1.1em;
+}
+#registration p,
+.formWrap p,
+.defaults p {
+  font-family: 'Open Sans', sans-serif;
+}
+#registration ul,
+.formWrap ul,
+.defaults ul {
+  list-style-type: disc;
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+#registration li,
+.formWrap li,
+.defaults li {
+  font-family: 'Open Sans', sans-serif;
+}
+#registration section,
+.formWrap section,
+.defaults section {
+  padding: 5px 0;
+}
+.faqSpacer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.imageDefaults {
+  width: 100%;
+  max-width: 500px;
+  margin: 10px 0;
+}
+.pictureCenter {
+  margin: 0 auto;
+  text-align: center;
+}
 /* #region Form */
+#inquiryForm {
+  border-style: outset;
+  border-width: 5px;
+  border-color: #dcdcdc;
+}
 #honeypot {
   display: none;
 }

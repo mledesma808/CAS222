@@ -14,9 +14,10 @@
   <div id="wrapper">
       <?php include '../includes/nav.inc.html.php' ?>
     <main>
+      <article id="registration">
       <h1>Complete Your Registration</h1>
-      <div id="source">All fields are required.</div>
-      <div id="registration">
+      <aside class="pictureCenter"><img class="imageDefaults" src="../images/banners/ace3.jpg" alt="Bicycle racers"></aside>
+      <p class="pictureCenter">All Fields Are Required</p>
       <form class="registrationForm" method="post" action=" ">
         <input type="text" name="honeypot" id="honeypot" value="" alt="if you fill this field out then your email will not be sent"/>
         
@@ -72,7 +73,7 @@
 
         <input id="mysubmit" type="submit" value="Submit">
       </form>
-      </div>
+      </article>
     </main>
       <?php include '../includes/footer.inc.html.php' ?>
   </div>

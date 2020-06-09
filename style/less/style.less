@@ -24,7 +24,7 @@ nav {
 
   /* navigation menu links */
   a {
-    color: @grey-light;
+    color: @white;
     padding: 14px 16px;
     text-decoration: none;
     display: block;
@@ -173,6 +173,9 @@ form {
 
 .registrationForm {
   grid-template-columns: 120px 1fr;
+  border-style: outset;
+  border-width: 5px;
+  border-color: @grey-light;
 }
 
 .registrationLabel {
@@ -187,8 +190,33 @@ p {
   width: 100%;
 }
 
+#registration, .formWrap, .defaults {
+  .defaultStructures();
+}
+
+.faqSpacer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.imageDefaults {
+  width: 100%;
+  max-width: 500px;
+  margin: 10px 0;
+}
+
+.pictureCenter {
+  margin: 0 auto;
+  text-align: center;
+}
+
 /* #region Form */
 
+#inquiryForm {
+  border-style: outset;
+  border-width: 5px;
+  border-color: @grey-light;
+}
 #honeypot {
   .hide();
 }
